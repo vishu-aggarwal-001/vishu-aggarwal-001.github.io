@@ -37,7 +37,7 @@
   a.card:hover{border-color:var(--accent);transform:translateY(-2px)}
   .card h3{margin:0 0 6px;font-size:21px}
   .card p{margin:0;color:var(--dim);font-size:15px}
-  .card .go{display:inline-block;margin-top:12px;font:13px system-ui,sans-serif;color:var(--accent)}
+  .card .go{display:inline-block;text-decoration:none;margin-top:12px;font:13px system-ui,sans-serif;color:var(--accent)}
   footer{margin-top:72px;color:var(--dim);font:14px system-ui,sans-serif;border-top:1px solid var(--line);padding-top:20px}
 </style>
 </head>
@@ -65,7 +65,13 @@
 
   <h2>Music</h2>
   <div class="grid">
-    <div class="card"><h3>Clarinet</h3><p>I play clarinet, write my own music and love to perform.</p></div>
+    <div class="card" style="grid-column:1/-1"><h3>Rangon Ka Dhamaka</h3><p>Backing track · 1:42</p>
+      <audio controls preload="none" src="music/rangon-ka-dhamaka-backing-track.mp3" style="width:100%;margin-top:12px"></audio>
+      <a class="go" href="music/rangon-ka-dhamaka-backing-track.mp3" download>Download MP3 →</a></div>
+    <div class="card"><h3>Chandni Raahein</h3><p>(Moonlit Paths) · Original Bollywood-style ballad for B♭ clarinet.</p>
+      <a class="go" href="music/chandni-raahein-clarinet.pdf">Sheet music (PDF) →</a><br>
+      <a class="go" href="music/chandni-raahein-clarinet-beginner.pdf">Beginner part (PDF) →</a></div>
+    <div class="card"><h3>About</h3><p>I play clarinet, write my own music and love to perform.</p></div>
   </div>
 
   <footer>© Vishu Aggarwal. Not to be confused with the corporate trainer and technical author of the same name.</footer>
