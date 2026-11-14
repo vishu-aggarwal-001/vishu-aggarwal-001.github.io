@@ -124,6 +124,9 @@ a.panel:hover,.panel.hov:hover{border-color:var(--cy);transform:translateY(-4px)
 .panel:hover .go::after{width:48px}
 .spine{position:absolute;right:22px;top:22px;font:900 54px var(--hud);color:rgba(46,230,255,.08);line-height:1}
 
+.bookrow{display:flex;gap:20px;align-items:flex-start}
+.cover{width:120px;flex:none;border:1px solid var(--line);box-shadow:0 0 30px rgba(46,230,255,.2),0 12px 24px rgba(0,0,0,.5)}
+@media (max-width:420px){.cover{width:96px}}
 /* music */
 .tracks{display:grid;gap:18px}
 .track{display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:center}
@@ -212,20 +215,36 @@ footer .sig{font:700 13px var(--hud);letter-spacing:.3em;color:var(--cy);margin-
   <section id="novels" class="reveal">
     <div class="sh"><span class="num">02</span><h2>Novels</h2><span class="rule"></span></div>
     <div class="grid2">
-      <a class="panel book" href="https://www.amazon.com/dp/B0HNZX4479">
+      <div class="panel book hov">
         <span class="spine" aria-hidden="true">01</span>
-        <div class="label"><b>&gt;</b> Novel</div>
-        <h3>The Aurora</h3>
-        <p>Available on Amazon.</p>
-        <span class="go">Read on Amazon</span>
-      </a>
-      <a class="panel book" href="https://www.amazon.com/dp/B0HPZC64DY">
+        <div class="bookrow">
+          <img class="cover" src="img/the-aurora-cover.jpg" alt="Cover of The Aurora" loading="lazy" width="120">
+          <div>
+            <div class="label"><b>&gt;</b> Novel</div>
+            <h3>The Aurora</h3>
+            <p>Available on Amazon.</p>
+          </div>
+        </div>
+        <div class="sheets">
+          <a class="btn" href="read/the-aurora.html">Read free sample</a>
+          <a class="btn" href="https://www.amazon.com/dp/B0HNZX4479">Buy on Amazon</a>
+        </div>
+      </div>
+      <div class="panel book hov">
         <span class="spine" aria-hidden="true">02</span>
-        <div class="label"><b>&gt;</b> Novel</div>
-        <h3>The Beginning of Memory</h3>
-        <p>Available on Amazon.</p>
-        <span class="go">Read on Amazon</span>
-      </a>
+        <div class="bookrow">
+          <img class="cover" src="img/the-beginning-of-memory-cover.jpg" alt="Cover of The Beginning of Memory" loading="lazy" width="120">
+          <div>
+            <div class="label"><b>&gt;</b> Novel</div>
+            <h3>The Beginning of Memory</h3>
+            <p>Indiana, March 2020. Ten-year-old Ryan has to write a story about the Holocaust, and his grandfather Abe, who has never talked about the number on his arm, finally starts to tell his.</p>
+          </div>
+        </div>
+        <div class="sheets">
+          <a class="btn" href="read/the-beginning-of-memory.html">Read free sample</a>
+          <a class="btn" href="https://www.amazon.com/dp/B0HPZC64DY">Buy on Amazon</a>
+        </div>
+      </div>
     </div>
   </section>
 
